@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>KAZI's Site</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script>
+		function convertMeterToCentimeter() {
+			// Get the value from the input field (replace "meterInput" with the actual ID)
+			var meterValue = document.getElementById("meterInput").value;
+
+			// Validate input (optional)
+			if (isNaN(meterValue)) {
+				alert("Please enter a valid number.");
+				return;
+			}
+
+			// Convert meter to centimeter
+			var centimeterValue = meterValue * 100;
+
+			// Display the result (replace "centimeterOutput" with the actual ID)
+			document.getElementById("centimeterOutput").value = centimeterValue + " cm";
+		}
+	</script>
+</head>
+<body>
+<h1>Welcome to 24224026 KAZI ASHRAFUL's Site</h1>
+<h4>I Changed the logo,added a pop up text, Java function to metar and centimetar Converter,Added my facebook url,added my name on the footer and headline </h4>
+	<div class="page">
+		<div class="header">
+			<a href="index.html" id="logo"><img src="https://www.masala.tv/wp-content/uploads/2020/12/fish-biryanii.jpg" alt="logo"></a>
+			<ul class="navigation">
+				<li id="link1" class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li id="link2">
+					<a href="about.html">About</a>
+				</li>
+				<li id="link3">
+					<a href="lollipops.html">Our Products</a>  </li>
+				<li id="link4">
+					<a href="blog.html">Blog</a>
+				</li>
+				<li id="link5">
+					<a href="locations.html">Contact</a>  </li>
+			</ul>
+			<script>
+				window.onload = function() {
+					alert("Welcome to KAZI's Site!");
+				}
+			</script>
+		</div>
+		<div class="body">
+			<div class="aside">
+				<p>
+					Content for your website
+				</p>
+			</div>
+			<div>
+				<h3>Meter to Centimeter Converter</h3>
+				<p>Enter a value in meters:</p>
+				<input type="text" id="meterInput">
+				<p>Equivalent in centimeters:</p>
+				<input type="text" id="centimeterOutput" disabled>
+				<button onclick="convertMeterToCentimeter()">Convert</button>
+			</div>
+			...
+		</div>
+		<div class="footer">
+			<div class="connect">
+				<span>Follow Us:</span> <a href="https://www.facebook.com/rahat.kazi.946517" id="facebook">facebook</a> <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a> <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">google+</a>
+			</div>
+			<form action="about.html">
+				<label for="join">Join Our Mailing List:</label>
+				<input type="text" id="join">
+				<input type="submit" id="submit" value="">
+			</form>
+			<p>
+				<h4>24224026 KAZI ASHRAFUL</h4>
+			<ul>
+				<li>
+					<a href="#">Privacy</a>
+				</li>
+				<li>
+					<a href="#">Terms and Conditions</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
